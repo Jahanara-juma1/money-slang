@@ -10,15 +10,65 @@
     <!-- --------- Bootstrap link -------- -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
-<body>
+<body class="w-75 mx-auto">
     <!-- ------- header part ------- -->
     <section class="container mt-5 mb-5">
         <h1 class="text-center">MONEY SLANG</h1>
         <br>
-        <artical class="row gap-4">
-            <div>
+        <artical class="row gap-5">
+            <div class="col">
                 <img src="images/pexels-mikhail-nilov-7735796 (6).jpg" alt="">
             </div>
+
+            <!-- -------- Customization Section -------- -->
+            <div class="col mx-3">
+                <div class="margin-top d-flex align-items-center">
+               <div class="bold">
+                <h4 class="text-center">Income</h4>
+                
+                 <p class="bold me-5">Income : 
+                    <input type="text" class="p-2" placeholder="1000"></p>
+                    <h4 class="text-center">Expenses</h4>
+                       <p class="bold me-5"><br>Food : 
+                        <input type="text" class="p-2" placeholder="3000">
+                    </p>
+                       <p class="bold me-5">Rent : 
+                        <input type="text" class="p-2" placeholder="2000">
+                    </p>
+                     <p class="bold me-5">Clothes : 
+                        <input type="text" class="p-2" placeholder="500">
+                    </p>
+
+                    <div class="text-center">
+                        <button type="button" class="btn-primary rounded py-2 px-5 text-center">Calculate</button>
+                        <br>
+
+                        <h4>Total Expenses : 5500</h4>
+                        <h4>Balance : 4500</h4>
+                    </div>
+
+                    <p class="bold me-5">Save : 
+                    <input type="text" class="p-2" placeholder="20"> % <button type="button" class="btn-primary rounded py-2 px-5 text-center">Save</button>
+
+                    <div class="text-center">
+                        <h4>Saving Amount : 2000</h4>
+                        <h4>Remaining Balance : 2500</h4>
+                    </div>
+                </div>
+                   
+                       
+                  
+                </div>
+                
+            </div>
+
+
+
+
+
+
+ 
+
         </artical>
     </section>
 </body>
