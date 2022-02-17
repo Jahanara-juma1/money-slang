@@ -21,32 +21,19 @@ function updateExpences(inputId,){
         return incomeAmount;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const savingsParcent = 0;
-  document.getElementById('save-button').addEventListener('click', function(){
-         const save = document.getElementById('savings-amount');
+     const savingsParcent = 30;
+    document.getElementById('save-button').addEventListener('click', function(){
+         const save = document.getElementById('savings-input').value;
+         const incomeAmount = document.getElementById('income-input').value;
        if(save == savingsParcent) {
                const savingsAmount = document.getElementById('savings-amount');
                let savings = parseFloat(savingsAmount.innerText);
-               const savingsGetParcent = (incomeAmount * 20) / 100;
-               savings = savings - savingsGetParcent;
+               const savingsAfterParcent = (incomeAmount * 20) / 100;
+               savings = savings - savingsAfterParcent;
                savingsAmount.innerText = savings;
        }
         else {
-                console.log('efjhgj')
+               
         }
 
 
